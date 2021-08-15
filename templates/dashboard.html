@@ -3,11 +3,10 @@
 <div style="text-align: center; padding: 60px;">
   <h1>Silo Data Listing</h1>
   <br class="clear">
-  <div style="text-align: left; padding-bottom: 20px;">
-      <a class="btn-lg btn-success" role="button" href="{% url 'temperature:index'  %}">Home</a>
+  <div style="text-align: center; padding-bottom: 20px;">
+      <a class="btn-lg btn-success" role="button" href="{% url 'temperature:index'  %}">Show Graph Data</a>
       <a class="btn-lg btn-info" role="button" href="{% url 'temperature:create'  %}">Create Data</a>
       <a class="btn-lg btn-warning" role="button" href="{% url 'temperature:upload_csv'  %}">Upload Data</a>
-      <a class="btn-lg btn-primary" role="button" href="{% url 'temperature:dashboard'  %}">Show Data</a>
   </div>
   <table class="table table-bordered">
     <thead>
