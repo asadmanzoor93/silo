@@ -1,5 +1,53 @@
 # Crover Silo APP
 
+[![Python 3.6.5](https://img.shields.io/badge/python-3.6.5-blue.svg)](https://www.python.org/downloads/release/python-365/)
+
+A central entry point of the application.
+
+## Prerequisites
+
+- Minimum [Python 3.6.5](https://docs.python.org/3/)
+
+### How do I run this project?
+
+The project includes all the basic configurations necessary to get you starting.
+
+### Setup Instructions:
+
+1. Assuming you have minimum python 3.6.5 installed, create a python 3.6.5 virtual environment
+
+```bash
+virtualenv -p python3 panel_env
+source panel_env/bin/activate
+```
+2. Clone this project:
+
+```bash
+git clone https://github.com/asadmanzoor93/silo.git
+cd silo
+git fetch
+```
+3. Install requirements:
+
+```bash
+pip install -r requirements.txt
+```
+4. Create database and run migrations:
+
+```bash
+python manage.py migrate
+```
+5. Create an admin user to access django admin:
+
+```bash
+python manage.py createsuperuser
+```
+6. Serve the app on localhost at port 8000
+
+```bash
+python manage.py runserver
+```
+
 ## Data Graph:
 ![screencapture-127-0-0-1-8000-2021-08-15-19_46_21](https://user-images.githubusercontent.com/17013371/129483067-8d4fd488-3b0e-4808-b45a-a482b88b5c72.png)
 
