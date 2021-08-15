@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="custom-form">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% if messages %}
+            {% for message_key, message in messages.items %}
+                <div>
+                    <span class="error-text"><strong>{{message_key}}: {{message|safe}}</strong></span>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <label for="file" class="form-label">Upload CSV File</label>
+        <input class="form-control" type="file" id="file" name="file"/>
+        <br class="clear">
+        <input  class="btn btn-info" type="submit" value="Upload" />
+        <a class="btn btn-default" href="{% url 'temperature:dashboard'  %}" role="button">Cancel</a>
+    </form>
+</div>
+{% endblock %}

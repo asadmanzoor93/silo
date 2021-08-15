@@ -1,0 +1,111 @@
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+
+.custom-form {
+    padding: 60px 500px 20px;
+}
+
+.error-text{
+  color: red;
+}
+
+.welcome-note-container {
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+}
+
+/* Footer Styling*/
+.footer {
+    background: #2f2a2a;
+    color: #f8f9fa;
+    padding: 27px 15px;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.footer .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .copyrights {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footer .link-box {
+    font-weight: 700;
+    border-bottom: 1px solid #464040;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.footer span {
+    font-size: 12px;
+    margin: 3px 21px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    margin: 0 20px 0 0;
+}
+
+.error .form-control {
+    outline: none;
+    border-color: #dc3545;
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.5);
+}
+
+.success .form-control {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
+
+.text {
+    font-size: 14px;
+}
+
+.text-error {
+    color: #dc3545;
+}
+
+.text-success {
+    color: #28a745;
+}

@@ -1,0 +1,33 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Silo Temperatures</title>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+          <h1>Silo Temperate Device</h1>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <br class="clear">
+    <footer class="footer">
+      <div class="container">
+        <div class="link-box">
+          <p>All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
+

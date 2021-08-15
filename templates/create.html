@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="custom-form">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+                <label for="{{ form.x_axis.id_for_label }}">{{ form.x_axis.label_tag }}</label>
+                <input
+                        type="number"
+                        class="form-control"
+                        step="1e-15"
+                        id="{{ form.x_axis.id_for_label }}"
+                        name="{{ form.x_axis.name }}"
+                >
+        </div>
+
+        <div class="form-group">
+                <label for="{{ form.y_axis.id_for_label }}">{{ form.y_axis.label_tag }}</label>
+                <input
+                        type="number"
+                        class="form-control"
+                        step="1e-15"
+                        id="{{ form.y_axis.id_for_label }}"
+                        name="{{ form.y_axis.name }}"
+                >
+        </div>
+
+        <div class="form-group">
+                <label for="{{ form.temperature.id_for_label }}">{{ form.temperature.label_tag }}</label>
+                <input
+                        type="number"
+                        class="form-control"
+                        step="1e-15"
+                        id="{{ form.temperature.id_for_label }}"
+                        name="{{ form.temperature.name }}"
+                >
+        </div>
+
+        <input  class="btn btn-info" type="submit" value="Submit" />
+        <a class="btn btn-default" href="{% url 'temperature:dashboard'  %}" role="button">Cancel</a>
+    </form>
+</div>
+{% endblock %}
